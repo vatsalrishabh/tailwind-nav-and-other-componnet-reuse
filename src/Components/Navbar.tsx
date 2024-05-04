@@ -38,7 +38,6 @@ const Navbar: React.FC = () => {
 
   const [blue,setblue]= useState<string>("blue");
   const markblue = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, color: string) => {
-    e.preventDefault(); // Prevent default anchor behavior
     setblue(color); // Set the clicked tab's color to blue
   
     // Loop through all the tabs and set their color to gray except for the clicked tab

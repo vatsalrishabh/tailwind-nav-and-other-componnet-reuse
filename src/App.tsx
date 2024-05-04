@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import './App.css'
 import Navbar from './Components/Navbar'
+import ErrorPage from './ErrorPage';
 
 function App() {
   const [count, setCount] = useState<string>("4")
@@ -15,6 +16,7 @@ function App() {
     {
       path: "/",
       element: <Navbar/>,
+      errorElement:<ErrorPage/>,
     },
     {
       path: "about",
